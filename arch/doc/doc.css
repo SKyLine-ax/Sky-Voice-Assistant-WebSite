@@ -1,0 +1,345 @@
+:root {
+    --primary-color: #7289da;
+    --secondary-color: #2c2f33;
+    --accent-color: #ff7a50;
+    --text-color: #e0e0e0;
+    --dark-bg: #1a1a1a;
+    --darker-bg: #121212;
+    --border-color: #3a3a3a;
+    --code-bg: #2d2d2d;
+    --light-text: #b8b8b8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--dark-bg);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: var(--darker-bg);
+    border-right: 1px solid var(--border-color);
+    padding: 2rem 0;
+    overflow-y: auto;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar-header {
+    padding: 0 1.5rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 1.5rem;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-item a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.nav-item a:hover {
+    background-color: rgba(114, 137, 218, 0.2);
+    color: var(--primary-color);
+}
+
+.nav-item.active a {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.subnav-list {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 280px;
+    max-width: 1000px;
+}
+
+.breadcrumbs {
+    display: flex;
+    margin-bottom: 2rem;
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span::before {
+    content: "/";
+    margin: 0 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem 0 1rem;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    background-color: var(--secondary-color);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #e0e0e0;
+}
+
+pre {
+    background-color: var(--code-bg);
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+.feature-visualization {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--secondary-color);
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(44, 47, 51, 0.5);
+}
+
+.info-box {
+    background-color: rgba(114, 137, 218, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.warning-box {
+    background-color: rgba(255, 122, 80, 0.1);
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.command-list {
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+.command {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.command:last-child {
+    border-bottom: none;
+}
+
+.command-name {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.top-nav {
+    display: none;
+    background: var(--primary-color);
+    padding: 1rem;
+    color: white;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        display: none;
+    }
+    
+    .sidebar.active {
+        display: block;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+    
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .theme-toggle {
+        position: static;
+        margin-left: auto;
+    }
+}
+
+.section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #4db8ff;
+    border-bottom: 2px solid #4db8ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.section h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #66ccff;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    background: #333;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.section a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+
+
+
