@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyVA</title>
+    <meta property="og:title" content="SkyVA" />
+    <meta property="og:description" content="SkyVA | Sky Voice Asisstant" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="22"></line>
+                        </svg>
+                    </div>
+                    <span>SkyVoiceAsisstant</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#hero">Главная</a>
+                    <a href="#features">Возможности</a>
+                    <a href="#how-it-works">Полезная информация</a>
+                    <a href="#download">Скачать</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Управляйте компьютером<br>голосом</h1>
+                    <p class="hero-subtitle">Инновационный голосовой ассистент, который позволит вам контролировать ваш компьютер без клавиатуры и мыши. Работайте эффективнее с помощью голосовых команд.</p>
+                    <a href="#download" class="btn">Попробовать бесплатно</a>
+                </div>
+                <div class="hero-image">
+                    <div class="voice-animation">
+                        <!-- Добавлены круговые волны для анимации -->
+                        <div class="voice-wave"></div>
+                        <div class="voice-wave"></div>
+                        <div class="voice-wave"></div>
+                        <div class="voice-circle">
+                            <div class="voice-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                    <line x1="12" y1="19" x2="12" y2="22"></line>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title">Возможности</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Управление приложениями</h3>
+                    <p class="feature-desc">Открывайте, закрывайте приложения с помощью голосовых команд.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 7h-9"></path>
+                            <path d="M14 17H5"></path>
+                            <circle cx="17" cy="17" r="3"></circle>
+                            <circle cx="7" cy="7" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Изменяйте громкость устройства</h3>
+                    <p class="feature-desc">Изменяйте громкость своего компьютера всего лишь одной командой!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <svg class="spotify-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#ff3030">
+                            <path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 30.6 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Треки в Spotify</h3>
+                    <p class="feature-desc">Включайте ваши любимые треки с российским названием в Spotify всего лишь одной командой. (ТРЕБУЕТСЯ ПРЕМИУМ ПОДПИСКА SPOTIFY)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Полезная информация</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Установите приложение</h3>
+                        <p class="step-desc">Скачайте и установите наше приложение на ваш компьютер. Доступно для Windows 10 и 11.</p>
+                        <div class="code-block">
+                            <div class="code-text">Откройте файл <span class="code-highlight">skyvoice.exe</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Ключевое слово</h3>
+                        <p class="step-desc">После включение компьютера/установки Асситента вы можете сказать "Скай" для проверки Асситента.</p>
+                        <div class="code-block">
+                            <div class="code-text"><span class="code-highlight">Скай</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Начните говорить команды</h3>
+                        <p class="step-desc">После активации ключевым словом, говорите команды естественным языком. Ассистент распознает их и выполнит необходимые действия — откроет программы, изменит громкость, или языковую раскладку.</p>
+                        <div class="code-block">
+                            <div class="code-text">Скай, <span class="code-highlight">открой браузер </span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Создавайте собственные команды</h3>
+                        <p class="step-desc">В дальнейших версиях Асситента планируеться сделать возможность добавлять свои собственные команды для более лучшего взаимодействия с компьютером</p>
+                        <div class="code-block">
+                            <div class="code-text">Пока что,<span class="code-highlight"> эта функция не доступна</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Возьмите отдых, или наооборот начните роботу </h3>
+                        <p class="step-desc">Скай может свернуть все вкладки на вашем столе лишь по одной команде,либо же наооборот открыть редактор кода (Пока что только VSC)</p>
+                        <div class="code-block">
+                            <div class="code-text">Перейди в режим отдыха, <span class="code-highlight">перейди в режим работы</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section download" id="download">
+        <div class="container">
+            <h2 class="section-title">Скачать сейчас</h2>
+            <p class="download-desc">Начните использовать голосовое управление компьютером уже сегодня. Скачайте бесплатную версию нашего приложения и оцените все преимущества голосового управления.</p>
+            <a href="#" class="btn btn-dark no-click">Скачать для Windows</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sky Voice Asisstant</h3>
+                    <p style="color: #aaa; margin-top: 10px;">Современный голосовой ассистент для управления компьютером</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features">Возможности</a></li>
+                        <li><a href="#how-it-works">Полезная Информация</a></li>
+                        <li><a href="#download">Скачать</a></li>
+                    </ul> <!-- Закрыт тег <ul> -->
+                </div>
+                <div class="footer-column">
+                    <h3>Поддержка</h3>
+                    <ul class="footer-links">
+                        <li><a href="/website/arch/arch.html">Документация</a></li>
+                        <li><a href="https://t.me//SkyvoiceasiBot">Часто задаваемые вопросы (Свяжитесь со мной через бота)</a></li>
+                        <li><a href="https://t.me//SkyvoiceasiBot">Сообщить о проблеме</a></li>
+                        <li><a href="https://t.me//SkyvoiceasiBot">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Следите за нами</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Telegram</a></li>
+                    </ul> <!-- Закрыт тег <ul> -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SkyVoiceAsisstant. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>    
