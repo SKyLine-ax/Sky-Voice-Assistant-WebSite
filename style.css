@@ -8,6 +8,7 @@
     --gray: #444444;
     --gray-dark: #222222;
     --transition: all 0.3s ease;
+    --sx:  rgb(220, 220, 220);
 }
 
 * {
@@ -59,6 +60,7 @@ nav {
     color: var(--primary);
     margin-left: -220px;
     width: 20%; 
+    transition: color 0.8s ease;
 }
 
 .logo-icon {
