@@ -18,10 +18,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const logo = document.querySelector(".logo"); // Находим логотип
+    const logo = document.querySelector(".logo"); 
     const sections = [
-        { selector: ".download", color: "rgb(220, 220, 220)" }, // Серый для .about
-        { selector: ".features", color: "#4FC3F7" }  // Золотистый для .features
+        { selector: ".download", color: "rgb(220, 220, 220)" }, 
+        { selector: ".features", color: "rgb(220, 220, 220)" } 
     ];
 
     const observer = new IntersectionObserver((entries) => {
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const section = sections.find(s => entry.target.matches(s.selector));
 
             if (entry.isIntersecting && section) {
-                logo.style.color = section.color; // Меняем цвет логотипа
+                logo.style.color = section.color;
             } else if (!entry.isIntersecting) {
-                logo.style.color = "var(--primary)"; // Возвращаем стандартный цвет, если элемент не виден
+                logo.style.color = "var(--primary)"; 
             }
         });
     }, { threshold: 0.6 });
