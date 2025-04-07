@@ -190,15 +190,15 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px; /* Или другие размеры для ПК */
-    height: 300px; /* Или другие размеры для ПК */
+    width: 300px;
+    height: 300px; 
     background-color: rgba(255, 48, 48, 0.05);
     border-radius: 50%;
-    display: flex; /* Важно: если на ПК не нужен flex, уберите или измените */
+    display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
-    /* Добавьте здесь любые другие стили, нужные для ПК */
+
   }
   
   .voice-animation:hover {
@@ -213,12 +213,12 @@ nav {
   
   .voice-animation:hover .voice-wave {
     opacity: 1;
-    animation: pulse 2s infinite; /* Убедитесь, что анимация pulse определена где-то */
+    animation: pulse 2s infinite; 
   }
   
   .voice-circle {
-    width: 200px; /* Или другие размеры для ПК */
-    height: 200px; /* Или другие размеры для ПК */
+    width: 200px; 
+    height: 200px; 
     background-color: rgba(255, 48, 48, 0.1);
     border-radius: 50%;
     display: flex;
@@ -228,16 +228,16 @@ nav {
   }
   
   .voice-icon {
-    width: 100px; /* Или другие размеры для ПК */
-    height: 100px; /* Или другие размеры для ПК */
-    background-color: var(--primary); /* Убедитесь, что переменная --primary определена */
+    width: 100px; 
+    height: 100px; 
+    background-color: var(--primary); 
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 40px; /* Или другой размер для ПК */
-    transition: var(--transition); /* Убедитесь, что переменная --transition определена */
+    font-size: 40px; 
+    transition: var(--transition); 
     z-index: 2;
   }
   
@@ -250,39 +250,39 @@ nav {
   }
   
   .voice-wave:nth-child(1) {
-    width: 120px; /* Или другие размеры для ПК */
-    height: 120px; /* Или другие размеры для ПК */
+    width: 120px; 
+    height: 120px; 
   }
   
   .voice-wave:nth-child(2) {
-    width: 150px; /* Или другие размеры для ПК */
-    height: 150px; /* Или другие размеры для ПК */
+    width: 150px; 
+    height: 150px; 
     animation-delay: 0.3s;
   }
   
   .voice-wave:nth-child(3) {
-    width: 180px; /* Или другие размеры для ПК */
-    height: 180px; /* Или другие размеры для ПК */
+    width: 180px; 
+    height: 180px; 
     animation-delay: 0.6s;
   }
   
-  /* Стили для секции, если они нужны на всех экранах */
+
   .section {
-    padding: 100px 0; /* Или другой паддинг для ПК */
+    padding: 100px 0; 
   }
   
   
-  /* === Медиа-запрос для мобильных устройств (<= 767px) === */
+
   @media (max-width: 767px) {
   
-    /* Скрываем всю анимацию */
+
     .voice-animation {
       display: none;
     }
   
-    /* Возможно, нужно изменить отступы секции на мобильных */
+
     .section {
-       padding: 50px 0; /* Например, уменьшаем отступы */
+       padding: 50px 0; 
     }
 
   }
