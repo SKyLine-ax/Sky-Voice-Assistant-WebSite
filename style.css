@@ -58,7 +58,7 @@ nav {
     font-weight: 700;
     font-size: 24px;
     color: var(--primary);
-    margin-left: -260px;
+    margin-left: -240px;
     width: 20%; 
     transition: color 0.8s ease;
 }
