@@ -1,4 +1,4 @@
-# Sky-Voice-Asisstant-Web-Site
-Website Voice Asisstant Sky
+# Sky-Voice-Assistant-Web-Site
+Website Voice Assistant Sky
 
 ## Description сoming soon..... ##
